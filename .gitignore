@@ -2,6 +2,8 @@
 *.o
 *.log
 
+*.bak
+
 # VisualStudio generate
 Release
 Debug
@@ -56,3 +58,5 @@ java
 package-lock.json
 *.wasm
 *.wast
+*.exe
+*.obj
