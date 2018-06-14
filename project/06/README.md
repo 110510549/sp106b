@@ -1,2 +1,2 @@
 # CH6習題
-Hack檔採用上學期的nand2tetris的Assembler.bat作為使用
+Hack檔的數據使用了上學期的nand2tetris的Assembler.bat這項工具來完成的
