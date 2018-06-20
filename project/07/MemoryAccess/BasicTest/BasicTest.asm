@@ -1,17 +1,17 @@
 // push constant 10
 @10
 D=A
-@SP
-A=M
+@SP        // @SP=0
+A=M        //A=A暫存器,和Memory相似,差在A暫存器只能存放一個,Memory可以存放多個
 M=D
 @SP
 M=M+1
 // pop local 0
 @SP
 M=M-1
-@LCL
-AD=M
-@R15
+@LCL       //@LCL=1
+AD=M       
+@R15       //@R15=15 ,通常R15=PC(程式)暫存器
 M=D
 @SP
 A=M
@@ -40,7 +40,7 @@ M=M+1
 M=M-1
 @2
 D=A
-@ARG
+@ARG        //@ARG=2
 A=M
 AD=D+A
 @R15
@@ -80,7 +80,7 @@ M=M+1
 M=M-1
 @6
 D=A
-@THIS
+@THIS         //@THIS=3
 A=M
 AD=D+A
 @R15
@@ -112,7 +112,7 @@ M=M+1
 M=M-1
 @5
 D=A
-@THAT
+@THAT         //@THAT=4
 A=M
 AD=D+A
 @R15
