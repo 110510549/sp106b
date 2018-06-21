@@ -151,7 +151,7 @@ void pass2(string inFile, string outFile) {
   fclose(fp);
   fclose(ofp);
 }
-//呼叫主譯器 (輸出.asm檔 輸出.hack檔)
+//呼叫組譯器 (輸出.asm檔 輸出.hack檔)
 void assemble(string file) {
   char inFile[100], outFile[100];
   sprintf(inFile, "%s.asm", file);

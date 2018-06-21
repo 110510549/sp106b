@@ -89,7 +89,7 @@ function addSymbol(symbol) {
 }
 //設一個可以放符號的位置,且不會重複放
 assemble(file+'.asm', file+'.hack');
-//呼叫主譯器[輸入.asm檔,輸出.hack檔]
+//呼叫組譯器[輸入.asm檔,輸出.hack檔]
 function assemble(asmFile, objFile) {
   var asmText = fs.readFileSync(asmFile, "utf8"); // 讀取檔案到 text 字串中
   var lines   = asmText.split(/\r?\n/); // 將組合語言分割成一行一行(正規表達式)
